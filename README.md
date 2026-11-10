@@ -1,10 +1,11 @@
 # ijaipandey.github.io
 
-## Eco pop ("Green by design")
+## Jai's Green Impact (eco pop + badge)
 
-The little green pop on the homepage lives in `eco-pop.js`.
-To change the CO2 number: open `eco-pop.js` on GitHub, tap the pencil,
-edit the number on the line `const ECO_SAVED_CO2_GRAMS = ...`, and
-press "Commit changes". The site updates itself in about a minute.
-The pop shows once per visitor, for 3 seconds, and plays again only
-when the number changes.
+The small green pop and bottom-left badge read their numbers from
+`eco-data.js`. To log a day: open `eco-data.js` on GitHub, tap the
+pencil, add one line like `['2026-11-12', 6, 14, 0],` (date, km
+cycled/walked, km by bus/train, trees planted), and press
+"Commit changes". The site updates itself in about a minute.
+If the log is empty, nothing is shown. The pop replays once per
+visitor whenever the totals change.
